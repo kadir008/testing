@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link -->
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/homescreen1.css">
+    <link rel="stylesheet" href="../css/homescreen2.css">
+    <link rel="stylesheet" href="../css/homescreen3.css">
+    <link rel="stylesheet" href="../css/homescreen4.css">
+    <link rel="stylesheet" href="../css/homescreen5.css">
+    <link rel="stylesheet" href="../css/homescreen6.css">
+    <style>
+        *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: rgb(195, 195, 195);
+}
+
+
+#header{
+    height:auto;
+    width:100%;
+    /* border:2px solid rgb(252, 88, 88);  */
+}
+
+nav{
+    height:100%;
+    /* border:1px solid red; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    background-color: black;
+}
+nav>div.logo{
+    /* border:1px solid green; */
+    color:white;
+    text-align: center;
+    /* margin-right:200px; */
+    width:auto;
+    padding: 0px 5px 0px 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    /* background-image: linear-gradient(to right, rgb(126, 248, 33), rgb(197, 4, 190) ); */
+    /* animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+
+/* @keyframes example {
+    0%   {background-image: linear-gradient(to right, brown, rgb(11, 161, 11) );}
+    25%  {background-image: linear-gradient(to right, rgb(11, 161, 11), );}
+    50%  {background-image: linear-gradient(to right, );}
+    75%  {background-image: linear-gradient(to right, );}
+    100% {background-image: linear-gradient(to right, );}
+  } */
+
+/* nav>div.logo img{
+    border:1px solid green;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+    background: transparent;
+} */
+
+
+nav>div.logo P{
+    /* border:1px solid green; */
+    height: 100px;
+    display: flex;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 98%;
+    width: 98%;
+    background: transparent;
+    margin: 0px 20px 0px 20px;
+    color: brown;
+}
+
+nav>ul{
+    /* border:1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    background: transparent;
+}
+
+nav>ul>li{
+    color:rgb(11, 161, 11);
+    margin-left: 50px;
+    background: transparent;
+}
+
+/* #secondnav{
+    height:95px;
+    border:1px solid black;
+    
+} */
+
+
+
+/* first part end */
+
+
+div#profile-container>div{
+    height: 600px;
+    width: 100%;
+    margin-top:20px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pcontainer{
+    height: 500px;
+    width: 700px;
+    background-color: black;
+}
+
+#right{
+    /* background-color: rgb(195, 195, 195); */
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border:5px solid rgb(195, 195, 195);
+    display: flex;
+    flex-direction: column;
+}
+
+#left{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(195, 195, 195);
+}
+
+div#right>.heading-cont{
+    background-color: transparent;
+    color:brown; 
+    font-size:40px;
+    /* border-bottom: 2px solid rgb(11, 161, 11); */
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:60px;
+    text-decoration: underline;
+}
+
+div.paragraph-cont{
+    height:300px;
+    width:700px;
+    /* border:2px solid green; */
+    background-color: transparent;
+    color: brown;
+    overflow: hidden;
+}
+
+div.firstpart{
+    height: 50%;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.firstpart>p{
+    width:48%;
+    height:auto;
+    border-left: 3px solid green;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    color:green;
+    background-color: transparent;
+}
+
+div.secondpart{
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+div.secondpart>p{
+    width:48%;
+    height:auto;
+    border-left: 3px solid green;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    color:green;
+    background-color: transparent;
+}
+
+.subpccontainer{
+    /* border:1px solid red; */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subpccontainer>.pcup{
+    height: 350px;
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subpccontainer>.pcdown{
+    height: 150px;
+    border-top: 5px solid rgb(11, 161, 11);
+    width: 100%;
+}
+
+
+.pcleft-indicator{
+    height: 100%;
+    width: 100px;
+    /* border: 1px solid yellow; */
+}
+
+.pcimage-container{
+    height: 100%;
+    width: 400px;
+    /* border: 1px solid green; */
+    /* border-top: 5px solid rgb(11, 161, 11);; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pcright-indicator{
+    height: 100%;
+    width: 100px;
+    /* border: 1px solid yellow; */
+}
+
+.pcimage-container>img{
+    height: 90%;
+    width: auto;
+    
+}
+
+.pcdown>p{
+    text-align: center;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* end of second part */
+
+div.tagline{
+    height: 50px;
+    /* width: 80%; */
+    /* background-color: rgb(99, 151, 151); */
+    /* background-image: url(../img/thirdpartbg2.jpg); */
+    background-color: rgb(222, 222, 222);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 16px; */
+    margin:auto;
+    overflow: hidden;
+}
+
+div.tagline>p{
+    background-color: transparent;
+    font-size:27px;
+    color:brown;
+    /* text-decoration: underline; */
+    /* border-bottom: 5px solid rgb(195, 195, 195); */
+    font-weight: 400;
+    /* padding:50px; */
+}
+
+div.article-box{
+    height: auto;
+    width: 100%;
+    border:1px solid black;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+div.sub-article-box{
+    height: auto;
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.article{
+    height: 200px;
+    width: 250px;
+    background-color: rgb(11, 161, 11);
+    margin-bottom: 20px;
+}
+
+div.article-img{
+    overflow: hidden;
+    height:120px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+div.article-img>img{
+    height: 100%;
+    width: auto;
+    /* background-color: black; */
+}
+
+.author-txt h4{
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.author-txt span{
+    color:brown;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.author-txt>p{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.author-txt>p>a{
+    font-size: 9px;
+}
+
+/* end of third part */
+
+div.footer-cont{
+    height: auto;
+    width: 100%;
+    /* background-color: rgb(11, 161, 11); */
+    /* background-image: url(../img/footerbg1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* border: 1px solid rgb(255, 0, 144); */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.footeritem1{
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.footeritem1>p{
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+div.footeritem1>p>b{
+    font-size: 17px;
+    color: brown;
+}
+
+/* end of footer up text */
+
+ div.footeritem2{
+    height:auto ;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    /* border: 1px solid rgb(21, 15, 15); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 85px;
+ }
+
+div.footer-links-cont{
+    height: auto;
+    width: 1200px;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ 
+
+div.footer-items{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(11, 161, 11);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+div.footer-items>div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+    padding:5px 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+}
+
+div.footer-items>div>img{
+    height: 40px;
+    width: auto;
+    padding-right: 5px;
+    /* border: 1px solid green; */
+    background-color: transparent;
+}
+
+div#footer-items{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(11, 161, 11);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+}
+
+div.address-container{
+    height: 270px;
+    width: 270px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+div.address-container>div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-top:5px; */
+    padding-bottom:5px;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+    padding:5px 10px;
+    border-radius: 5px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+div.address-container>div>img{
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+    /* border: 1px solid green; */
+    background-color: white;
+}
+
+div.addressbar{
+    height: 150px;
+    width: 100%;
+}
+
+
+div.copyr8-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background-color: rgb(11, 161, 11);
+}
+
+div.copyr8-cont p{
+    background-color: transparent;
+    font-size: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+ /* end of the homepage */
+
+ @media only screen and (max-width: 1080px) {
+    div#profile-container>div{
+      height: 600px;
+      width: 100%;
+      /* margin-top:20px; */
+      background-color: rgb(0, 0, 0);
+      /* display: flex; */
+      /* justify-content: center; */
+      /* align-items: center; */
+  }
+
+
+  nav{
+    height:100%;
+    /* border:1px solid red; */
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height:auto;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+  
+  .pcontainer{
+      height: 500px;
+      width: 400px;
+      background-color: black;
+  }
+  
+  #right{
+      /* background-color: rgb(195, 195, 195); */
+      /* border-bottom-right-radius: 20px;
+      border-top-right-radius: 20px; */
+      /* border:5px solid rgb(195, 195, 195); */
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #left{
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      background-color: rgb(195, 195, 195);
+  }
+  
+  div#right>.heading-cont{
+      background-color: transparent;
+      color:brown; 
+      font-size:35px;
+      /* border-bottom: 2px solid rgb(11, 161, 11); */
+      height: 170px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top:60px;
+      text-decoration: underline;
+  }
+  
+  div.paragraph-cont{
+      height:300px;
+      width:390px;
+      /* border:2px solid red; */
+      background-color: transparent;
+      overflow: hidden;
+  }
+  
+  div.firstpart{
+      height: 50%;
+      background-color:transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border: 2px solid green; */
+  }
+  div.firstpart>p{
+      width:48%;
+      height:auto;
+      /* border-left: 3px solid green; */
+      padding-left: 12px;
+      padding-right: 12px;
+      font-size: 12px;
+      color:green;
+      background-color: transparent;
+  }
+  
+  div.secondpart{
+      height: 50%;
+      /* background-color: brown; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      /* border:2px solid white; */
+  }
+  
+  div.secondpart>p{
+      width:48%;
+      height:auto;
+      /* border-left: 3px solid green; */
+      padding-left: 12px;
+      padding-right: 12px;
+      font-size: 12px;
+      color:green;
+      background-color: transparent;
+  }
+  
+  .subpccontainer{
+      /* border:1px solid red; */
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .subpccontainer>.pcup{
+      height: 350px;
+      /* border: 1px solid rgb(128, 0, 0); */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .subpccontainer>.pcdown{
+      height: 150px;
+      border-top: 5px solid rgb(11, 147, 11);
+      width: 100%;
+  }
+  
+  
+  .pcleft-indicator{
+      height: 100%;
+      width: 100px;
+      /* border: 1px solid rgb(255, 236, 225); */
+  }
+  
+  .pcimage-container{
+      height: 95%;
+      width: 400px;
+      /* border: 1px solid rgb(99, 255, 99); */
+      /* border-top: 5px solid rgb(11, 161, 11);; */
+      display: flex;
+      justify-content: center;
+      align-items: end;
+  }
+  
+  .pcright-indicator{
+      height: 100%;
+      width: 100px;
+      /* border: 1px solid yellow; */
+  }
+  
+  .pcimage-container>img{
+      height: 75%;
+      width: auto;
+      
+  }
+  
+  .pcdown>p{
+      text-align: center;
+      font-weight: 800;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 15px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+/* end of second part */
+
+  div.tagline>p{
+        
+    font-size:20px;
+    text-align: center;
+  }
+
+    }
+
+
+     /* end of the homepage */
+ 
+     @media only screen and (max-width: 860px) {
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+        background-color: rgb(195, 195, 195);
+    }
+    
+    #header{
+        height:auto;
+        width:100%;
+        /* border:2px solid black;  */
+    }
+    
+    nav{
+        height:100%;
+        /* border:1px solid red; */
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height:auto;
+        background-color: black;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    nav>div.logo{
+        /* border:1px solid green; */
+        color:white;
+        text-align: center;
+        /* margin-right:200px; */
+        width:auto;
+        padding: 0px 50px 0px 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    /* nav>div.logo img{
+        border:1px solid green;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:15px;
+        background: transparent;
+    } */
+
+    nav>div.logo P{
+        /* border:1px solid green; */
+        height: 100px;
+        display: flex;
+        font-size: 34px;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-items: center;
+        height: 98%;
+        width: 98%;
+        background: transparent;
+        margin: 5px 20px 5px 20px;
+    }
+    
+    nav>ul{
+        /* border:1px solid blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-size: 18px;
+        background: transparent;
+    }
+    
+    nav>ul>li{
+        color:rgb(11, 161, 11);
+        margin-left: 50px;
+        background: transparent;
+    }
+    
+    /* #secondnav{
+        height:95px;
+        border:1px solid black;
+        
+    } */
+    
+    
+    
+    /* first part end */
+    
+    
+    div#profile-container>div{
+        height: auto;
+        width: 100%;
+        margin-top:20px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .pcontainer{
+        height: 500px;
+        width: 700px;
+        background-color: black;
+    }
+    
+    #right{
+        /* background-color: rgb(195, 195, 195); */
+        border-bottom-right-radius: 00px;
+        border-top-right-radius: 00px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:5px solid rgb(195, 195, 195);
+        /* border:5px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #left{
+        /* border-bottom-left-radius: 20px; */
+        /* border-top-left-radius: 20px; */
+        background-color: rgb(195, 195, 195);
+    }
+    
+    div#right>.heading-cont{
+        background-color: transparent;
+        color:brown; 
+        font-size:50px;
+        /* border-bottom: 2px solid rgb(11, 161, 11); */
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:60px;
+        text-decoration: underline;
+    }
+    
+    div.paragraph-cont{
+        height:300px;
+        width:700px;
+        /* border:2px solid green; */
+        background-color: transparent;
+        overflow: hidden;
+    }
+    
+    div.firstpart{
+        height: 50%;
+        background-color:transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.firstpart>p{
+        width:48%;
+        height:auto;
+        border-left: 3px solid green;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        color:green;
+        background-color: transparent;
+    }
+    
+    div.secondpart{
+        height: 50%;
+        /* background-color: brown; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    div.secondpart>p{
+        width:48%;
+        height:auto;
+        border-left: 3px solid green;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        color:green;
+        background-color: transparent;
+    }
+    
+    .subpccontainer{
+        /* border:1px solid red; */
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subpccontainer>.pcup{
+        height: 350px;
+        /* border: 1px solid green; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subpccontainer>.pcdown{
+        height: 150px;
+        border-top: 5px solid rgb(11, 161, 11);
+        width: 100%;
+    }
+    
+    
+    .pcleft-indicator{
+        height: 100%;
+        width: 100px;
+        /* border: 1px solid yellow; */
+    }
+    
+    .pcimage-container{
+        height: 100%;
+        width: 400px;
+        /* border: 1px solid green; */
+        /* border-top: 5px solid rgb(11, 161, 11);; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pcright-indicator{
+        height: 100%;
+        width: 100px;
+        /* border: 1px solid yellow; */
+    }
+    
+    .pcimage-container>img{
+        height: 90%;
+        width: auto;
+        
+    }
+    
+    .pcdown>p{
+        text-align: center;
+        font-weight: 800;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+    /* end of second part */
+
+    div.tagline>p{
+        
+        font-size:23px;
+        text-align: center;
+       
+    }
+
+
+  }
+
+
+
+   /* end of the homepage */
+   @media only screen and (max-width: 770px) {
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+        background-color: rgb(195, 195, 195);
+    }
+    
+    #header{
+        height:auto;
+        width:100%;
+        /* border:2px solid black;  */
+    }
+    
+    nav{
+        height:100%;
+        /* border:1px solid red; */
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height:auto;
+        background-color: black;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    nav>div.logo{
+        /* border:1px solid green; */
+        color:white;
+        text-align: center;
+        /* margin-right:200px; */
+        width:auto;
+        padding: 0px 50px 0px 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    /* nav>div.logo img{
+        border:1px solid green;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:15px;
+        background: transparent;
+    } */
+    nav>div.logo P{
+        /* border:1px solid green; */
+        height: 100px;
+        display: flex;
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-items: center;
+        height: 98%;
+        width: 98%;
+        background: transparent;
+        margin: 5px 20px 5px 20px;
+    }
+    
+    nav>ul{
+        /* border:1px solid blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-size: 18px;
+        background: transparent;
+    }
+    
+    nav>ul>li{
+        color:rgb(11, 161, 11);
+        margin-left: 30px;
+        background: transparent;
+    }
+    
+    /* #secondnav{
+        height:95px;
+        border:1px solid black;
+        
+    } */
+    
+    
+    
+    /* first part end */
+    
+    
+    div#profile-container>div{
+        height: auto;
+        width: 100%;
+        margin-top:5px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .pcontainer{
+        height: 500px;
+        width: 540px;
+        background-color: black;
+    }
+    
+    #right{
+        /* background-color: rgb(195, 195, 195); */
+        border-bottom-right-radius: 00px;
+        border-top-right-radius: 00px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:5px solid rgb(195, 195, 195);
+        /* border:5px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #left{
+        /* border-bottom-left-radius: 20px; */
+        /* border-top-left-radius: 20px; */
+        background-color: rgb(195, 195, 195);
+    }
+    
+    div#right>.heading-cont{
+        background-color: transparent;
+        color:brown; 
+        font-size:40px;
+        /* border-bottom: 2px solid rgb(11, 161, 11); */
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:60px;
+        text-decoration: underline;
+    }
+    
+    div.paragraph-cont{
+        height:300px;
+        width:538px;
+        /* border:2px solid green; */
+        background-color: transparent;
+        overflow: hidden;
+    }
+    
+    div.firstpart{
+        height: 50%;
+        background-color:transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.firstpart>p{
+        width:48%;
+        height:auto;
+        border-left: 3px solid green;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        color:green;
+        background-color: transparent;
+    }
+    
+    div.secondpart{
+        height: 50%;
+        /* background-color: brown; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    div.secondpart>p{
+        width:48%;
+        height:auto;
+        border-left: 3px solid green;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        color:green;
+        background-color: transparent;
+    }
+    
+    .subpccontainer{
+        /* border:1px solid red; */
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subpccontainer>.pcup{
+        height: 350px;
+        /* border: 1px solid green; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subpccontainer>.pcdown{
+        height: 150px;
+        border-top: 5px solid rgb(11, 161, 11);
+        width: 100%;
+    }
+    
+    
+    .pcleft-indicator{
+        height: 100%;
+        width: 100px;
+        /* border: 1px solid yellow; */
+    }
+    
+    .pcimage-container{
+        height: 100%;
+        width: 400px;
+        /* border: 1px solid green; */
+        /* border-top: 5px solid rgb(11, 161, 11);; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pcright-indicator{
+        height: 100%;
+        width: 100px;
+        /* border: 1px solid yellow; */
+    }
+    
+    .pcimage-container>img{
+        height: 90%;
+        width: auto;
+        
+    }
+    
+    .pcdown>p{
+        text-align: center;
+        font-weight: 800;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+    /* end of second part */
+
+    div.tagline>p{
+        
+        font-size:17px;
+        text-align: center;
+       
+    }
+
+  }
+
+   /* end of the homepage */
+   @media only screen and (max-width: 570px) {
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+        background-color: rgb(195, 195, 195);
+    }
+    
+    #header{
+        height:auto;
+        width:100%;
+        /* border:2px solid black;  */
+    }
+    
+    nav{
+        height:100%;
+        /* border:1px solid red; */
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height:auto;
+        background-color: black;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    nav>div.logo{
+        /* border:1px solid green; */
+        color:white;
+        text-align: center;
+        /* margin-right:200px; */
+        width:auto;
+        padding: 0px 50px 0px 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    /* nav>div.logo img{
+        border:1px solid green;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:0px;
+        background: transparent;
+        padding-top:15px;
+    } */
+    
+    nav>ul{
+        /* border:1px solid blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-size: 12px;
+        background: transparent;
+        width: 350px;
+    }
+    
+    nav>ul>li{
+        color:rgb(11, 161, 11);
+        margin-left: 30px;
+        background: transparent;
+    }
+    
+    /* #secondnav{
+        height:95px;
+        border:1px solid black;
+        
+    } */
+    
+    
+    
+    /* first part end */
+    
+    
+    div#profile-container>div{
+        height: auto;
+        width: 100%;
+        margin-top:5px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .pcontainer{
+        height: 500px;
+        width: 350px;
+        background-color: black;
+    }
+    
+    #right{
+        /* background-color: rgb(195, 195, 195); */
+        border-bottom-right-radius: 00px;
+        border-top-right-radius: 00px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:5px solid rgb(195, 195, 195);
+        /* border:5px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #left{
+        /* border-bottom-left-radius: 20px; */
+        /* border-top-left-radius: 20px; */
+        background-color: rgb(195, 195, 195);
+    }
+    
+    div#right>.heading-cont{
+        background-color: transparent;
+        color:brown; 
+        font-size:30px;
+        /* border-bottom: 2px solid rgb(11, 161, 11); */
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:30px;
+        text-decoration: underline;
+    }
+    
+    div.paragraph-cont{
+        height:auto;
+        width:348px;
+        /* border:2px solid green; */
+        background-color: transparent;
+        overflow: hidden;
+        padding-bottom:60px;
+        
+    }
+    
+    div.firstpart{
+        height: 50%;
+        background-color:transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:30px;
+    }
+    div.firstpart>p{
+        width:48%;
+        height:auto;
+        border-left: 3px solid green;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        color:green;
+        background-color: transparent;
+    }
+    
+    div.secondpart{
+        height: 50%;
+        /* background-color: brown; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    div.secondpart>p{
+        width:48%;
+        height:auto;
+        border-left: 3px solid green;
+        /* border:2px solid yellow; */
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        color:green;
+        background-color: transparent;
+    }
+    
+    .subpccontainer{
+        /* border:1px solid red; */
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subpccontainer>.pcup{
+        height: 350px;
+        /* border: 1px solid green; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subpccontainer>.pcdown{
+        height: 150px;
+        border-top: 5px solid rgb(11, 161, 11);
+        width: 100%;
+    }
+    
+    
+    .pcleft-indicator{
+        height: 100%;
+        width: 100px;
+        /* border: 1px solid yellow; */
+    }
+    
+    .pcimage-container{
+        height: 100%;
+        width: 400px;
+        /* border: 1px solid green; */
+        /* border-top: 5px solid rgb(11, 161, 11);; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pcright-indicator{
+        height: 100%;
+        width: 100px;
+        /* border: 1px solid yellow; */
+    }
+    
+    .pcimage-container>img{
+        height: 90%;
+        width: auto;
+        
+    }
+    
+    .pcdown>p{
+        text-align: center;
+        font-weight: 800;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    /* end of second part */
+
+    div.tagline>p{
+        
+        font-size:15px;
+        text-align: center;
+       
+    }
+
+
+  }
+
+   /* end of the homepage */
+   @media only screen and (max-width: 370px) {
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+        background-color: rgb(195, 195, 195);
+    }
+    
+    #header{
+        height:auto;
+        width:100%;
+        /* border:2px solid black;  */
+    }
+    
+    nav{
+        height:100%;
+        /* border:1px solid red; */
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height:auto;
+        background-color: black;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    nav>div.logo{
+        /* border:1px solid green; */
+        color:white;
+        text-align: center;
+        /* margin-right:200px; */
+        width:auto;
+        padding: 0px 50px 0px 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    /* nav>div.logo img{
+        border:1px solid green;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:0px;
+        background: transparent;
+        padding-top:15px;
+    } */
+    
+    nav>div.logo P{
+        /* border:1px solid green; */
+        height: 100px;
+        display: flex;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-items: center;
+        height: 98%;
+        width: 98%;
+        background: transparent;
+        margin: 5px 20px 5px 20px;
+    }
+
+    nav>ul{
+        /* border:1px solid blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-size: 8px;
+        background: transparent;
+        width: 350px;
+    }
+    
+    nav>ul>li{
+        color:rgb(11, 161, 11);
+        margin-left: 15px;
+        background: transparent;
+    }
+    
+    /* #secondnav{
+        height:95px;
+        border:1px solid black;
+        
+    } */
+    
+    
+    
+    /* first part end */
+    
+    
+    div#profile-container>div{
+        height: auto;
+        width: 100%;
+        margin-top:5px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .pcontainer{
+        height: auto;
+        width: 240px;
+        background-color: black;
+    }
+    
+    #right{
+        /* background-color: rgb(195, 195, 195); */
+        border-bottom-right-radius: 00px;
+        border-top-right-radius: 00px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:5px solid rgb(195, 195, 195);
+        /* border:5px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #left{
+        /* border-bottom-left-radius: 20px; */
+        /* border-top-left-radius: 20px; */
+        background-color: rgb(195, 195, 195);
+    }
+    
+    div#right>.heading-cont{
+        background-color: transparent;
+        color:brown; 
+        font-size:20px;
+        /* border-bottom: 2px solid rgb(11, 161, 11); */
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:15px;
+        text-decoration: underline;
+    }
+    
+    div.paragraph-cont{
+        height:auto;
+        width:240px;
+        /* border:2px solid green; */
+        background-color: transparent;
+        overflow: hidden;
+        padding-bottom:20px;
+        
+    }
+    
+    div.firstpart{
+        height: 50%;
+        background-color:transparent;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom:0px;
+        margin-left: 10px;
+        /* border: 1px solid white; */
+    }
+    div.firstpart>p{
+        width:95%;
+        height:auto;
+        border-left: 3px solid green;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        color:green;
+        background-color: transparent;
+        margin-bottom: 20px;
+    }
+    
+    div.secondpart{
+        height: 50%;
+        /* background-color: brown; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: transparent;
+        margin-left: 10px;
+    }
+    
+    div.secondpart>p{
+        width:95%;
+        height:auto;
+        border-left: 3px solid green;
+        /* border:2px solid yellow; */
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        color:green;
+        background-color: transparent;
+        margin-bottom: 20px;
+    }
+    
+    .subpccontainer{
+        /* border:1px solid red; */
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subpccontainer>.pcup{
+        height: 250px;
+        /* border: 1px solid green; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subpccontainer>.pcdown{
+        height: 150px;
+        border-top: 5px solid rgb(11, 161, 11);
+        width: 100%;
+    }
+    
+    
+    .pcleft-indicator{
+        height: 100%;
+        width: 0px;
+        /* border: 1px solid yellow; */
+    }
+    
+    .pcimage-container{
+        height: 90%;
+        width: 250px;
+        /* border: 1px solid rgb(0, 0, 0); */
+        /* border-top: 5px solid rgb(11, 161, 11);; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pcright-indicator{
+        height: 100%;
+        width: 0px;
+        /* border: 1px solid yellow; */
+    }
+    
+    .pcimage-container>img{
+        height: 90%;
+        width: auto;
+        
+    }
+    
+    .pcdown>p{
+        text-align: center;
+        font-weight: 800;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    /* end of second part */
+
+    div.tagline>p{
+        
+        font-size:12px;
+        text-align: center;
+       
+    }
+
+  }
+
+
+   /* end of the homepage */
+    </style>
+</head>
+<body>
+    <div class="mainfour" id="header">
+        <nav>
+            <!-- <div class="logo"><img src="../img/hello1.svg" alt=""></div> -->
+            <div class="logo"><p>AK-Development</div>
+            <ul>
+                <li class="navlist">হোম পেইজ</li>
+                <li class="navlist">প্রোফাইল</li>
+                <li class="navlist">আর্টিকেল</li>
+                <li class="navlist">যোগাযোগ</li>
+            </ul>
+        </nav>
+        
+        <!-- <div id="secondnav">
+             it is an empty space under the navigation bar to add some new things if we need in future 
+        </div> -->
+    </div>
+    <!-- first part end-->
+
+
+
+
+
+    <div class="mainfour" id="profile-container">
+        <div>
+            <div class="pcontainer" id="left">
+                <div class="subpccontainer">
+                    <div class="pcup">
+                        <div class="pcleft-indicator"></div>
+                        <div class="pcimage-container"><img src="../img/myimg.png" alt=""></div>
+                        <div class="pcright-indicator"></div>
+                    </div>
+                    
+                    <div class="pcdown"><p> একজন সুদক্ষ ও প্রফেশনাল ডেপলপার হওয়ায় 
+                        আমি আপনাকে গড়ে দিতে পারি একটি চমৎকার ও ইউজার ফ্রেন্ডলি ওয়েবসাইট।
+                         যা আপনার কাস্টমারকে আকৃষ্ট করবে এবং আপনার বিজনেসকে ছড়িয়ে দিবে পৃথিবী জুড়ে। </p></div>
+                </div>
+            </div>
+
+
+            <div class="pcontainer" id="right">
+                <div class="heading-cont" style="color:brown">ওয়েবসাইট কেন নেব?</div>
+                <div class="paragraph-cont">
+                    <div class="firstpart">
+                        <P> আপনার স্কিল, আপনার পারসোনালিটি এবং ব্যক্তি ও কর্ম জীবণের অভিজ্ঞতা গুলো তুলে ধরা যেতে পারে একটি ওয়েবসাইট এর মাধ্যমে। </P>
+                        <P> গল্প, কবিতা, কাব্য, মহাকাব্য যাই হোক না কেন; আপনি আপনার চিন্তাধারা ও মতমত গুলো তুলে ধরতে পারেন একটি ওয়েবসাইট এর মাধ্যমে। </P>
+                    </div>
+                    <div class="secondpart">
+                        <P> আপনার নিজের হাতে অথবা প্রাতিষ্ঠানিক তৈরী প্রোডাক্ট গুলো গ্লোবালী বিক্রি করার জন্য ওয়েবসাইট হতে পারে একটি আদর্শ মাধ্যম। </P>
+                        <P> ব্যবসায়িক ক্ষেত্রে আপনার প্রোডাক্ট বা সার্ভিসের বিজ্ঞাপন দেয়ার জন্য একটি ওয়েবসাইট-ই নির্ভরযোগ্য মাধ্যম হিসেবে কাজ করবে। </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- second part end-->
+    
+
+
+
+
+
+    <div class="mainfour" id="article-container">
+        <div class="tagline"><p> নিচের কথাগুলো সফলতা চায় এমন প্রত্যেকের জন্য কার্যকর</p></div>
+        <div class="article-box">
+            <div class="sub-article-box">
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+                <!-- end of article 1 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of article 2 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of article 3 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of article 4 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+
+                <!-- end of artcle 5 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of artcle 6 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 7 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 8 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 9 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 10 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 11 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 12 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 13 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 14 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 15 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 16 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 17 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 18 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div> 
+
+                <!-- end of 19 -->
+
+                <div class="article">
+                    <div class="article-img"><img src="../img/success.png" alt=""></div>
+                    <div class="author-txt">
+                        <h4>বিষয়: <span>সফলতা</span></h4>
+                        <p>বিছানায় শুয়ে থেকে সফলতার স্বপ্ন দেখা,হাত বাড়িয়ে চাঁদ ধরার মতো। তুমি যখন..<a href="#">আরোও পড়ুন</a></p>
+                        <!-- <div class="blank"><p>11/5/2023</p></div> -->
+                    </div>
+                </div>
+
+                <!-- end of 20 -->
+                
+            </div>
+        </div>
+    </div>
+    <!-- third part end -->
+    <div class="mainfour" id="footer">
+        <div class="footer-cont">
+            <div class="footeritem1"><p>তথ্য প্রযুক্তি মানুষের জীবনকে অনেক সহজ করে দিয়েছে। 
+                 কলকারখনায় বিপদজনক কাজ গুলো আজ মানুষের পরিবর্তে রোবট দ্বারা নিয়ন্ত্রিত। প্রযুক্তির এই বিশাল 
+                 পৃথিবীতে মানুষের কর্মজীবন থেকে শুরু করে দৈনন্দিন জীবনের প্রায় সকল কাজই একটা অঘোষিত প্রতিযোগীতার দিকে ধাবিত হচ্ছে । মানুষ এখন
+                 নিজেদের কাজ গুলো খুবই অল্প প্ররিশ্রমে অল্প সময়ে করতে চায়। প্রায় সব বয়সের মানুষই আজকাল নিত্য দিনের অনেকটা সময় ফেসবুক, 
+                 টুইটাররে মতো বিভিন্ন সামাজিক যোগাযোগ মাধ্যমে সংযুক্ত থাকে এবং যেকোন প্রয়োজনে তারা গুগল সার্চ করে থাকে।
+                 শুধু তাই নয়, ‍আজকাল তারা ঘরে বসেই নিজেদের কেনাকাটা করছে। আর  এটা সম্ভব হয়েছে প্রডাক্ট ‍ডিজিটাল মার্কেটিং এর জন্য। ডিজিটাল মার্কেটিং
+                 সম্পর্কে পড়ে বিস্তারিত আলোচনা করা হবে। আর এই ডিজিটাল মার্কেটিং আরোও ভালোভাবে করা যায়, যদি আপনার কাছে একটা অনলাইন স্টোর থাকে।
+                 আপনার অফলাইন স্টোর থেকে কেবল মাত্র একটা ‍নির্দিষ্ট এরিয়া বা অঞ্চলের গ্রাহক সেবা নিতে পারে। কিন্তু নেট দুনিয়ায় আপনার একটা অনলাইন 
+                 স্টোর বা <b>ওয়েবসাইট</b> থাকলে পৃথিবীর যেকোন প্রান্ত থেকে গ্রাহকগণ আপনার প্রডাক্ট বা সেবা নেয়ার সক্ষমতা রাখে। </p></div>
+            <div class="footeritem2">
+                <div class="footer-links-cont">
+                    <div class="footer-items">
+                        <div><img src="../img/insta.png" alt="">Follow us on Instagram</div>
+                        <div><img src="../img/fb.png" alt="">Visit Our Facebook Page</div>
+                        <div><img src="../img/twt.png" alt="">Follow us on Tweeter</div>
+                        <div><img src="../img/yyt.png" alt="">Watch Our Channel</div>
+                    </div>
+                    <div class="footer-items">
+                        <div><img src="../img/mail.png" alt="">ak2359327@gmail.com</div>
+                        <div><img src="../img/telegram.png" alt="">Join Our Telegram Community</div>
+                        <div><img src="../img/whatsup.png" alt="">01652565526</div>
+                        <div><img src="../img/website.png" alt="">dailynews.com</div>
+                    </div>
+                    <div id="footer-items">
+                        <div class="address-container">
+                            <div><img src="../img/address.png" alt="">Follow us on Instagram</div>
+                            <div class="addressbar"></div>
+                            <div><img src="../img/telephone.png" alt="">+2201785655</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fourth part end -->
+    <div class="copyr8-cont"><p>©All right reserve AK-Development 2024</p></div>
+</body>
+</html>
